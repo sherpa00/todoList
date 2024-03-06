@@ -13,6 +13,7 @@
 		746C5DD72B94CABF00E58AEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 746C5DD62B94CABF00E58AEE /* Preview Assets.xcassets */; };
 		746C5DE02B94CBD600E58AEE /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C5DDF2B94CBD600E58AEE /* ListView.swift */; };
 		746C5DE22B94CCDF00E58AEE /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C5DE12B94CCDF00E58AEE /* ListRowView.swift */; };
+		747BE83B2B988446003F72E7 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BE83A2B988446003F72E7 /* ItemModel.swift */; };
 		74FADC882B964AE80050F93B /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FADC872B964AE80050F93B /* AddNoteView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		746C5DD62B94CABF00E58AEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		746C5DDF2B94CBD600E58AEE /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		746C5DE12B94CCDF00E58AEE /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		747BE83A2B988446003F72E7 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		74FADC872B964AE80050F93B /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 		746C5DCC2B94CABE00E58AEE /* todoList */ = {
 			isa = PBXGroup;
 			children = (
+				747BE8392B988427003F72E7 /* Models */,
 				746C5DCD2B94CABE00E58AEE /* todoListApp.swift */,
 				746C5DD12B94CABE00E58AEE /* Item.swift */,
 				746C5DDE2B94CBC000E58AEE /* Views */,
@@ -82,6 +85,14 @@
 				74FADC872B964AE80050F93B /* AddNoteView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		747BE8392B988427003F72E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				747BE83A2B988446003F72E7 /* ItemModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747BE83B2B988446003F72E7 /* ItemModel.swift in Sources */,
 				746C5DE02B94CBD600E58AEE /* ListView.swift in Sources */,
 				746C5DE22B94CCDF00E58AEE /* ListRowView.swift in Sources */,
 				746C5DD22B94CABE00E58AEE /* Item.swift in Sources */,

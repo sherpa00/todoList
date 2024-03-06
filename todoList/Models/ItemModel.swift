@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+// model for todo list items
+struct ItemModel: Identifiable {
+    let id = UUID().uuidString
+    let name: String
+    let isCompleted: Bool
+}
