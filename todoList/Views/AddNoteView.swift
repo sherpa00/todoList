@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct AddNoteView: View {
+    @Environment(\.dismiss) var dissmissScreen
+    
+    @EnvironmentObject var listViewModel: ListViewModel
+    
     @State private var noteText: String = "";
+    
+    @State private var showAlert: Bool = false
+    @State private var alertTitle: String = ""
     
     var body: some View {
         VStack {
@@ -23,7 +30,7 @@ struct AddNoteView: View {
             .padding()
             
             Button(action: {
-                noteText = ""
+                addNewNote()
             }, label: {
                 Text("Add Note")
                     .foregroundStyle(.white)
@@ -34,11 +41,36 @@ struct AddNoteView: View {
             Spacer()
         }
         .navigationTitle("Add Note 📇")
+        .alert(isPresented: $showAlert) {
+            getAlert()
+        }
     }
+    
+    func addNewNote() {
+        if (isValidated()) {
+            listViewModel.addItem(text: noteText)
+            dissmissScreen()
+        }
+    }
+    
+    func isValidated() -> Bool {
+        if (noteText.count >= 3) {
+            return true
+        }
+        alertTitle = "Note text should be greater than 3 characters long."
+        showAlert = true
+        return false;
+    }
+    
+    func getAlert() -> Alert {
+        return Alert(title: Text(alertTitle))
+    }
+
 }
 
 #Preview {
     NavigationStack {
         AddNoteView()
     }
+    .environmentObject(ListViewModel())
 }

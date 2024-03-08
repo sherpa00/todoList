@@ -15,14 +15,15 @@ struct ListRowView: View {
         HStack {
             Image(systemName: item.isCompleted ? "checkmark.circle" : "circle")
                 .foregroundStyle(item.isCompleted ? Color.green : Color.red)
-            Text(item.name)
+            Text(item.text)
+                .strikethrough(item.isCompleted, color: .black)
             Spacer()
         }
-        .padding(.horizontal, 8)
+        .padding(10)
         .font(.title2)
     }
 }
 
 #Preview {
-    ListRowView(item: ItemModel(name: "Hello this is a test item", isCompleted: false))
+    ListRowView(item: ItemModel(text: "Hello this is a test item", isCompleted: true))
 }
