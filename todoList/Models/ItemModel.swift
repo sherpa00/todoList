@@ -8,7 +8,7 @@
 import Foundation
 
 // model for todo list items
-struct ItemModel: Identifiable {
+struct ItemModel: Identifiable, Codable {
     let id: String
     let text: String
     let isCompleted: Bool
