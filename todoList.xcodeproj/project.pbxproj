@@ -15,6 +15,7 @@
 		746C5DE02B94CBD600E58AEE /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C5DDF2B94CBD600E58AEE /* ListView.swift */; };
 		746C5DE22B94CCDF00E58AEE /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C5DE12B94CCDF00E58AEE /* ListRowView.swift */; };
 		747BE83B2B988446003F72E7 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BE83A2B988446003F72E7 /* ItemModel.swift */; };
+		74AFCD1E2B9DC0D4008E2711 /* EmptyItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AFCD1D2B9DC0D4008E2711 /* EmptyItemsView.swift */; };
 		74FADC882B964AE80050F93B /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FADC872B964AE80050F93B /* AddNoteView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		746C5DDF2B94CBD600E58AEE /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		746C5DE12B94CCDF00E58AEE /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		747BE83A2B988446003F72E7 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		74AFCD1D2B9DC0D4008E2711 /* EmptyItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyItemsView.swift; sourceTree = "<group>"; };
 		74FADC872B964AE80050F93B /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 				746C5DDF2B94CBD600E58AEE /* ListView.swift */,
 				746C5DE12B94CCDF00E58AEE /* ListRowView.swift */,
 				74FADC872B964AE80050F93B /* AddNoteView.swift */,
+				74AFCD1D2B9DC0D4008E2711 /* EmptyItemsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				747BE83B2B988446003F72E7 /* ItemModel.swift in Sources */,
 				746C5DE02B94CBD600E58AEE /* ListView.swift in Sources */,
 				746C5DE22B94CCDF00E58AEE /* ListRowView.swift in Sources */,
+				74AFCD1E2B9DC0D4008E2711 /* EmptyItemsView.swift in Sources */,
 				746C5DD22B94CABE00E58AEE /* Item.swift in Sources */,
 				7437C8C92B9B005B00EDCCE9 /* ItemsViewModel.swift in Sources */,
 				746C5DCE2B94CABE00E58AEE /* todoListApp.swift in Sources */,
