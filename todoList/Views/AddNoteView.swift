@@ -25,8 +25,7 @@ struct AddNoteView: View {
             )
             .padding()
             .background(.gray.opacity(0.3))
-            .foregroundStyle(.black)
-            .font(.headline)
+            .foregroundStyle(.primary)
             .padding()
             
             Button(action: {
@@ -35,9 +34,10 @@ struct AddNoteView: View {
                 Text("Add Note")
                     .foregroundStyle(.white)
             })
-            .background(.blue)
-            .buttonStyle(.borderedProminent)
-            .controlSize(.extraLarge)
+            .padding(.vertical)
+            .frame(maxWidth: .infinity)
+            .background(Color("AccentColor"))
+            .padding(.horizontal)
             Spacer()
         }
         .navigationTitle("Add Note 📇")

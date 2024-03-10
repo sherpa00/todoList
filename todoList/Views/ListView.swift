@@ -37,8 +37,7 @@ struct ListView: View {
             })
             ToolbarItem(placement: .topBarTrailing, content: {
                 NavigationLink(value: "") {
-                    Image(systemName: "plus.circle")
-                        .font(.title2)
+                    Text("Add")
                 }
             })
         }
